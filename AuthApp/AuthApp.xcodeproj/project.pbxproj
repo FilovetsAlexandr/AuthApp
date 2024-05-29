@@ -8,19 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F47E0B522C0744F000C2DCD5 /* AuthAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B512C0744F000C2DCD5 /* AuthAppApp.swift */; };
-		F47E0B542C0744F000C2DCD5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B532C0744F000C2DCD5 /* ContentView.swift */; };
 		F47E0B562C0744F300C2DCD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47E0B552C0744F300C2DCD5 /* Assets.xcassets */; };
 		F47E0B592C0744F300C2DCD5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47E0B582C0744F300C2DCD5 /* Preview Assets.xcassets */; };
 		F47E0B612C07453700C2DCD5 /* AuthModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B5F2C07453700C2DCD5 /* AuthModel.xcdatamodeld */; };
+		F47E0B632C0745DD00C2DCD5 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B622C0745DD00C2DCD5 /* SplashView.swift */; };
+		F47E0B682C074ED100C2DCD5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B672C074ED100C2DCD5 /* RegistrationView.swift */; };
+		F47E0B6A2C07538600C2DCD5 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B692C07538600C2DCD5 /* UsersListView.swift */; };
+		F47E0B6C2C07553700C2DCD5 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B6B2C07553700C2DCD5 /* AuthorizationView.swift */; };
+		F47E0B6E2C075B7700C2DCD5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B6D2C075B7700C2DCD5 /* MainView.swift */; };
+		F47E0B702C075E5400C2DCD5 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B6F2C075E5400C2DCD5 /* PersistenceController.swift */; };
+		F47E0B742C0761D600C2DCD5 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47E0B732C0761D600C2DCD5 /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F47E0B4E2C0744F000C2DCD5 /* AuthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47E0B512C0744F000C2DCD5 /* AuthAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAppApp.swift; sourceTree = "<group>"; };
-		F47E0B532C0744F000C2DCD5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F47E0B552C0744F300C2DCD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47E0B582C0744F300C2DCD5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F47E0B602C07453700C2DCD5 /* AuthModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AuthModel.xcdatamodel; sourceTree = "<group>"; };
+		F47E0B622C0745DD00C2DCD5 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		F47E0B642C074B4000C2DCD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47E0B672C074ED100C2DCD5 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		F47E0B692C07538600C2DCD5 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
+		F47E0B6B2C07553700C2DCD5 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		F47E0B6D2C075B7700C2DCD5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F47E0B6F2C075E5400C2DCD5 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		F47E0B732C0761D600C2DCD5 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,10 +47,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F43078512C07BB6D0041CFA1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F47E0B692C07538600C2DCD5 /* UsersListView.swift */,
+				F47E0B622C0745DD00C2DCD5 /* SplashView.swift */,
+				F47E0B672C074ED100C2DCD5 /* RegistrationView.swift */,
+				F47E0B6B2C07553700C2DCD5 /* AuthorizationView.swift */,
+				F47E0B6D2C075B7700C2DCD5 /* MainView.swift */,
+				F47E0B732C0761D600C2DCD5 /* InitialView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F43078522C07BB840041CFA1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F43078532C07BBC50041CFA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F47E0B5F2C07453700C2DCD5 /* AuthModel.xcdatamodeld */,
+				F47E0B6F2C075E5400C2DCD5 /* PersistenceController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F43078542C07BBDD0041CFA1 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F47E0B512C0744F000C2DCD5 /* AuthAppApp.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		F43078552C07BBF80041CFA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F47E0B552C0744F300C2DCD5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F47E0B452C0744F000C2DCD5 = {
 			isa = PBXGroup;
 			children = (
 				F47E0B502C0744F000C2DCD5 /* AuthApp */,
+				F43078552C07BBF80041CFA1 /* Resources */,
+				F47E0B572C0744F300C2DCD5 /* Preview Content */,
 				F47E0B4F2C0744F000C2DCD5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,11 +113,11 @@
 		F47E0B502C0744F000C2DCD5 /* AuthApp */ = {
 			isa = PBXGroup;
 			children = (
-				F47E0B512C0744F000C2DCD5 /* AuthAppApp.swift */,
-				F47E0B532C0744F000C2DCD5 /* ContentView.swift */,
-				F47E0B552C0744F300C2DCD5 /* Assets.xcassets */,
-				F47E0B572C0744F300C2DCD5 /* Preview Content */,
-				F47E0B5F2C07453700C2DCD5 /* AuthModel.xcdatamodeld */,
+				F43078532C07BBC50041CFA1 /* Models */,
+				F43078542C07BBDD0041CFA1 /* Delegate */,
+				F43078512C07BB6D0041CFA1 /* Views */,
+				F43078522C07BB840041CFA1 /* ViewModels */,
+				F47E0B642C074B4000C2DCD5 /* Info.plist */,
 			);
 			path = AuthApp;
 			sourceTree = "<group>";
@@ -140,9 +200,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47E0B6A2C07538600C2DCD5 /* UsersListView.swift in Sources */,
+				F47E0B6E2C075B7700C2DCD5 /* MainView.swift in Sources */,
 				F47E0B612C07453700C2DCD5 /* AuthModel.xcdatamodeld in Sources */,
-				F47E0B542C0744F000C2DCD5 /* ContentView.swift in Sources */,
+				F47E0B742C0761D600C2DCD5 /* InitialView.swift in Sources */,
+				F47E0B632C0745DD00C2DCD5 /* SplashView.swift in Sources */,
+				F47E0B682C074ED100C2DCD5 /* RegistrationView.swift in Sources */,
+				F47E0B6C2C07553700C2DCD5 /* AuthorizationView.swift in Sources */,
 				F47E0B522C0744F000C2DCD5 /* AuthAppApp.swift in Sources */,
+				F47E0B702C075E5400C2DCD5 /* PersistenceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,15 +341,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AuthApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 94FVSLY3WZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuthApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,9 +357,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = by.sanches.AuthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,15 +374,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AuthApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 94FVSLY3WZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AuthApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +390,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = by.sanches.AuthApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -356,8 +430,7 @@
 				F47E0B602C07453700C2DCD5 /* AuthModel.xcdatamodel */,
 			);
 			currentVersion = F47E0B602C07453700C2DCD5 /* AuthModel.xcdatamodel */;
-			name = AuthModel.xcdatamodeld;
-			path = /Users/home/Desktop/AuthApp/AuthApp/AuthApp/AuthModel.xcdatamodeld;
+			path = AuthModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
