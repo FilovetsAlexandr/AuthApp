@@ -33,8 +33,10 @@ struct InitialView: View {
                     if showUsersList {
                         UsersListView()
                             .navigationBarBackButtonHidden(true)
+                            .environment(\.managedObjectContext, viewContext)
                     } else if showRegistration {
                         RegistrationView(showUsersList: $showUsersList)
+                            .environment(\.managedObjectContext, viewContext)
                     }
                 }
             }

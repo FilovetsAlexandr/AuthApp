@@ -15,13 +15,14 @@ struct UsersListView: View {
     ) var users: FetchedResults<User>
 
     @State private var showRegistration = false
+    @Environment (\.managedObjectContext) private var viewContext
 
     var body: some View {
         NavigationView {
             ZStack {
                 List {
                     ForEach(users, id: \.self) { user in
-                        NavigationLink(destination: AuthorizationView(email: user.email ?? "")) {
+                        NavigationLink(destination: AuthorizationView(email: user.email ?? "").environment(\.managedObjectContext, viewContext)) {
                             Text(user.email ?? "")
                         }
                     }
@@ -42,6 +43,11 @@ struct UsersListView: View {
         }
         .sheet(isPresented: $showRegistration) {
             RegistrationView(showUsersList: .constant(false))
+        }
+        .onAppear{
+            if users.isEmpty {
+                showRegistration = true
+            }
         }
     }
 }

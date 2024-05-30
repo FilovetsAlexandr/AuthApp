@@ -40,8 +40,8 @@ struct RegistrationView: View {
             Button("Зарегистрироваться") {
                 if validateFields() {
                     saveUser()
-                    showUsersList = true
-                    self.presentationMode.wrappedValue.dismiss()
+//                    showUsersList = true
+                    navigateToMainView()
                 } else {
                     showError = true
                 }
@@ -57,7 +57,20 @@ struct RegistrationView: View {
         }
     }
     
-    private func validateFields() -> Bool { email.contains("@") && password.count >= 8 }
+    private func validateFields() -> Bool {
+        let emailRegEx = "^[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-]+(\\.[\\p{L}0-9!#$%&'*+\\/=?^_`{|}~-]+)*@[\\p{L}0-9-]+(\\.[\\p{L}0-9-]+)*\\.([\\p{L}]{2,})$"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email) && password.count >= 8
+    }
+    
+    private func navigateToMainView() {
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let window = windowScene.windows.first {
+            window.rootViewController = UIHostingController(rootView: MainView(email: email)
+                .environment(\.managedObjectContext, viewContext))
+            window.makeKeyAndVisible()
+        }
+    }
     
     private func saveUser() {
         let newUser = User(context: viewContext)
